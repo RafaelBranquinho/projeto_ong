@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrente Solidária</title>
+    <meta name="description" content="Conheça a Corrente Solidária, nossos projetos sociais e como você pode ajudar.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h1>Corrente Solidária</h1>
+            </a>
+
+            <button class="nav-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="#contato" class="btn btn-primary">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="banner-principal" class="banner hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <h2>Transformando Vidas Através da Ação</h2>
+                        <p>Conheça nossa missão e junte-se a nós.</p>
+                        <a href="projetos.html" class="btn btn-secondary btn-lg">Nossos Projetos</a>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <img src="imagens/voluntarios-criancas-projeto.jpg.png" alt="Voluntários e crianças sorrindo em uma atividade da Corrente Solidária" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="sobre-nos" class="section-padding">
+            <div class="container">
+                
+                <div class="text-center">
+                    <h2>Sobre a Organização</h2>
+                </div>
+                
+                <div class="row">
+                
+                    <div class="col-lg-8 offset-lg-2">
+            
+                        <article>
+                            <h3>Nossa Missão</h3>
+                            <p>Nossa missão é promover o desenvolvimento social e educacional como ferramenta de transformação. Acreditamos que, ao fornecer acesso a oportunidades de aprendizado de qualidade e ao fortalecer os laços comunitários, podemos capacitar indivíduos a alcançar seu pleno potencial e a construir um futuro mais justo e solidário para todos.</p>
+                        </article>
+                        
+                        <article style="margin-top: var(--spacing-5);">
+                            <h3>Visão</h3>
+                            <p>Acreditamos em um futuro com mais igualdade, respeito e oportunidades reais para todos. Visualizamos uma sociedade onde cada indivíduo, independentemente de sua origem, tenha acesso às ferramentas educacionais e ao apoio social necessários para desenvolver seu pleno potencial, quebrar ciclos de vulnerabilidade e construir uma trajetória de autonomia e dignidade.</p>
+                            
+                            <h3 style="margin-top: var(--spacing-4);">Nossos Valores</h3>
+                            <ul>
+                                <li><strong>Solidariedade:</strong> É a essência do nosso nome e da nossa ação. Acreditamos na força da união e no apoio mútuo como motores de mudança.</li>
+                                <li><strong>Respeito à Diversidade:</strong> Acolhemos e valorizamos cada indivíduo em sua singularidade, promovendo um ambiente inclusivo e livre de preconceitos.</li>
+                                <li><strong>Equidade:</strong> Mais do que igualdade, buscamos oferecer oportunidades justas e adaptadas às necessidades de cada um...</li>
+                                <li><strong>Educação como Pilar:</strong> Vemos o conhecimento e a educação não como um fim, mas como a principal ferramenta...</li>
+                                <li><strong>Compromisso e Transparência:</strong> Atuamos com seriedade, responsabilidade e total clareza...</li>
+                                <li><strong>Empatia:</strong> Colocar-se no lugar do outro é o primeiro passo para entender as reais necessidades...</li>
+                            </ul>
+                        </article>
+            
+                    </div> </div> </div> </section> ```
+
+        <hr>
+
+        <section id="contato" class="section-padding bg-light">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Informações de Contato</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <address class="contact-info">
+                            <p>Entre em contato conosco:</p>
+                            Email: <a href="mailto:correntesolidaria@ong.org.br">correntesolidaria@ong.org.br</a><br>
+                            Telefone: <a href="tel:+5511999998888">(11) 99999-8888</a><br>
+                            Rua da Esperança, 123 - Centro<br>
+                            São Paulo - SP, CEP 01000-000
+                        </address>
+                        <div class="alert alert-success">
+                            <span class="badge badge-primary">Dica</span> Estamos abertos para visitas de segunda a sexta!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Corrente Solidária. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        // --- CÓDIGO DO MENU HAMBÚRGUER (Existente) ---
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('is-active');
+                navToggle.classList.toggle('is-active');
+            });
+        }
+
+        // --- NOVO CÓDIGO DO DROPDOWN (Clique) ---
+        const dropdownToggles = document.querySelectorAll('.dropdown > a');
+
+        dropdownToggles.forEach(function(toggle) {
+            toggle.addEventListener('click', function(event) {
+                // Previne o link de navegar (já que é href="#!")
+                event.preventDefault();
+
+                const dropdownMenu = toggle.nextElementSibling; // Pega o .dropdown-menu
+                
+                // Fecha outros dropdowns abertos (se houver)
+                document.querySelectorAll('.dropdown-menu.is-active').forEach(function(menu) {
+                    if (menu !== dropdownMenu) {
+                        menu.classList.remove('is-active');
+                    }
+                });
+
+                // Alterna (abre/fecha) o dropdown clicado
+                dropdownMenu.classList.toggle('is-active');
+            });
+        });
+
+        // Opcional: Fechar dropdowns se clicar fora do menu
+        window.addEventListener('click', function(event) {
+            if (!event.target.closest('.nav-menu')) {
+                document.querySelectorAll('.dropdown-menu.is-active').forEach(function(menu) {
+                    menu.classList.remove('is-active');
+                });
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>
