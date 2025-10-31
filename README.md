@@ -7,7 +7,7 @@
 Projeto de plataforma web responsiva para a ONG fictícia "Corrente Solidária", desenvolvido para demonstrar habilidades em desenvolvimento front-end, desde a estruturação semântica até a implantação de uma Single Page Application (SPA) otimizada.
 
 # Para acessar:
-- https://lonardi95.github.io/projeto-ong/#inicio
+- https://github.com/RafaelBranquinho/projeto_ong
 
 ## Sobre o Projeto
 
