@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Corrente Solidária</title>
+    <meta name="description" content="Cadastre-se para ser voluntário ou apoiador da nossa ONG.">
+</head>
+<body>
+    <header>
+        <h1>Corrente Solidária</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulário de Cadastro</h2>
+            <h3>Seu tempo e talento podem transformar vidas.</h3>
+                <p>
+                <p>Na "Corrente Solidária", acreditamos que a mudança real acontece quando as pessoas se unem por um propósito maior. Cada voluntário é um elo essencial que fortalece nossa capacidade de agir e levar esperança, dignidade e oportunidades a quem mais precisa.</p>
+                <p>Ser voluntário é doar o que você tem de mais precioso: sua energia, seu conhecimento e sua empatia. É a chance de ver de perto o impacto positivo do seu esforço e fazer parte de algo maior que você mesmo.</p>
+            <h3>Como Você Pode Ajudar?</h3>
+                O voluntariado em nossa ONG é diversificado, assim como os talentos da nossa comunidade. Você pode contribuir de diversas formas, de acordo com sua disponibilidade e habilidades:
+            <h3>Ação Direta nos Projetos:</h3>
+                <ul>
+                    <li><strong>Alfabetização Cidadão:</strong> Seja um facilitador e ajude jovens e adultos a descobrir o poder da leitura e da escrita.</li>
+                    <li><strong>Ação de Rua:</strong> Participe do preparo (cozinha) ou da distribuição de alimentos e agasalhos para a população em situação de rua.</li>
+                    <li><strong>Apoio nos Bastidores:</strong>Logística e Organização: Ajude na triagem de doações (roupas, alimentos) e na organização de nosso estoque.</li>
+                    <li><strong>Administrativo:</strong> Auxilie em tarefas de escritório, atendimento e cadastro.</li>
+                    <li><strong>Eventos e Captação:</strong>Participe da organização e execução de nossos bazares, campanhas de arrecadação e eventos comunitários.</li>
+                    <li><strong>Voluntariado Profissional (Pro Bono):</strong>Você é profissional de saúde (médico, psicólogo, dentista), direito, comunicação, TI, ou outra área? Seu conhecimento especializado pode fortalecer imensamente nossa estrutura e atendimento.</li>
+                </ul>
+            <h3>O que Esperamos de um Voluntário?</h3>
+                    Mais do que habilidades técnicas, buscamos pessoas alinhadas aos nossos valores:
+                <ul>
+                    <li><strong>Compromisso:</strong> Mesmo que seja por poucas horas, contamos com a sua presença nos dias combinados.</li>
+                    <li><strong>Empatia e Respeito:</strong> Saber ouvir e tratar a todos com a dignidade que merecem, sem julgamentos.</li>
+                    <li><strong>Espírito de Equipe:</strong> Acreditamos na força do coletivo. Ninguém faz nada sozinho!</li>
+                    <li><strong>Vontade de Aprender:</strong> Estar aberto a novas realidades e desafios.</li>
+                </ul>
+            <h3>Pronto para ser um Elo desta Corrente?</h3>
+                    Sua boa vontade é a ferramenta de mudança mais poderosa que existe. Junte-se a nós e ajude a escrever histórias de superação e solidariedade.</p>
+        <form action="processa-cadastro.php" method="post">            
+            <fieldset>
+                <legend><strong>Dados Pessoais</strong></legend>                
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome_completo" required minlength="3">
+                </div>                
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+                </div>
+                <div>
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="data_nascimento" required>
+                </div>
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required 
+                           pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                           title="Digite o CPF no formato: 123.456.789-00"
+                           placeholder="123.456.789-00">
+                </div>
+                <div>
+                    <label for="telefone">Telefone / Celular:</label>
+                    <input type="tel" id="telefone" name="telefone" required 
+                           pattern="\(\d{2}\) \d{5}-\d{4}"
+                           title="Digite o telefone no formato: (11) 98765-4321"
+                           placeholder="(11) 98765-4321">
+                </div>
+            </fieldset>            
+            <fieldset>
+                <legend><strong>Endereço</strong></legend>
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required 
+                           pattern="\d{5}-\d{3}"
+                           title="Digite o CEP no formato: 12345-678"
+                           placeholder="12345-678">
+                </div>
+                <div>
+                    <label for="endereco">Endereço (Rua, Av.):</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                </div>                
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" required maxlength="2" placeholder="Ex: SP">
+                </div>
+            </fieldset>
+            <div>
+                <button type="submit">Enviar Cadastro</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Corrente Solidária. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
